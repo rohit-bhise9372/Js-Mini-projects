@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="BMI calculator app" />
+    <title>Water Watcher</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">BMI Buddy</a></li>
+          <li><a href="calorie-cal.html">Calorie Compass</a></li>
+          <li><a href="water-watch.html">Water Watcher</a></li>
+          <li><a href="step-sankhya.html">Step Sankhya</a></li>
+        </ul>
+      </nav>
+      <hgroup>
+        <h1>Water Watcher</h1>
+        <p>Know your daily water intake based on your weight and season</p>
+      </hgroup>
+    </header>
+    <main class="container">
+      <section>
+        <p>Set your weight, and season to get your water intake</p>
+        <div>
+          <input type="number" ; placeholder="Enter your weight" id="weight" />
+
+          <select id="season">
+            <option value="summer">Summer</option>
+            <option value="winter">Winter</option>
+            <option value="monsoon">Monsoon</option>
+          </select>
+
+          <button id="calculateBtn" type="button">Suggest Water Intake</button>
+        </div>
+      </section>
+      <section>
+        <p id="result"></p>
+      </section>
+    </main>
+    <footer class="container neog-footer">
+      <small>
+        go from zero to hero at full stack development with
+        <a href="https://neog.camp">neog.camp</a>
+      </small>
+    </footer>
+
+    <script>
+      function calculateFinalIntake(weight) {
+        if (weight < 50) {
+          return 1.5;
+        } else if (weight <= 70) {
+          return 2.0;
+        } else {
+          return 2.5;
+        }
+      }
+
+      function calculateSeasonIntake(baseLitres, season) {
+        if (season === "summer") {
+          return baseLitres + 0.5;
+        } else if (season === "winter") {
+          return baseLitres + 0.3;
+        } else {
+          return baseLitres;
+        }
+      }
+
+      function calculateIntake() {
+        const weightElement = document.getElementById("weight");
+        const seasonElement = document.getElementById("season");
+        const resultElement = document.getElementById("result");
+
+        const weight = parseFloat(weightElement.value);
+        const season = seasonElement.value;
+
+        if (weight <= 0) {
+          resultElement.innerText = "Enter a valid weight.";
+          return;
+        }
+        const baseLitres = calculateFinalIntake(weight);
+        const finalBaseLitres = calculateSeasonIntake(baseLitres, season);
+
+        resultElement.innerText =
+          "Drink at least " + finalBaseLitres + " L of water daily.";
+      }
+
+      const calculateBtn = document.getElementById("calculateBtn");
+      calculateBtn.addEventListener("click", calculateIntake);
+    </script>
+  </body>
+</html>
