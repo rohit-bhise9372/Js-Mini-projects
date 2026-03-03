@@ -1,84 +1,87 @@
 # <h1>🚀 Smart Marketer</h1>
 
-SmartMarketer Tools is a simple and practical collection of web-based marketing utilities that help users quickly generate shareable links for WhatsApp, Twitter, and GitHub.
+SmartMarketer Tools is a collection of simple and practical marketing utilities that help users quickly generate shareable links for WhatsApp, Twitter, and GitHub.
 
-This project is built using HTML, CSS, and JavaScript and focuses on DOM manipulation and event handling.
+This project is built using **HTML, CSS, and Vanilla JavaScript** and focuses on DOM manipulation and event handling.
 
-📌 Features
-🔹 1. WAMI Link Generator
+---
 
-Generate WhatsApp message links instantly.
+## 🌐 Live Features
 
-Enter phone number and select a predefined message.
+### 🔹 1. WAMI (WhatsApp) Link Generator
+Generate a WhatsApp message link instantly.
+- Enter your phone number
+- Select a predefined message
+- Get a shareable `wa.me` link
 
-Automatically creates a shareable wa.me link.
+---
 
-🔹 2. Twitter (Tweet) Link Generator
+### 🔹 2. Twitter (Tweet) Link Generator
+Create a pre-filled Twitter share link.
+- Enter your tweet message
+- Automatically encodes the text
+- Generates a `twitter.com/intent/tweet` link
 
-Create pre-filled tweet links.
+---
 
-Automatically encodes the message.
+### 🔹 3. GitHub Link Generator
+Generate a GitHub profile URL.
+- Enter GitHub username
+- Instantly get your profile link
 
-Generates twitter.com/intent/tweet link.
+---
 
-🔹 3. GitHub Link Generator
+## 🛠️ Tech Stack
 
-Generate GitHub profile URL using username.
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+- PicoCSS (via CDN)
 
-Quick and simple link creation.
+---
 
-🛠️ Tech Stack
+## 📁 Project Structure
 
-HTML5
-
-CSS3
-
-JavaScript (Vanilla JS)
-
-PicoCSS (via CDN)
-
-📂 Project Structure
+```
 SmartMarketer/
 │
-├── index.html          # Main Landing Page
-├── wami-link.html      # WhatsApp Link Generator
-├── tweet-link.html     # Twitter Link Generator
-├── github-link.html    # GitHub Link Generator
-├── styles.css          # Custom Styles
-🎯 Learning Outcomes
+├── index.html
+├── wami-link.html
+├── tweet-link.html
+├── github-link.html
+├── styles.css
+```
 
-This project helped in understanding:
+---
 
-DOM Manipulation
+## 🎯 What I Learned
 
-Event Listeners
+- DOM Manipulation
+- Event Listeners
+- Handling User Input
+- encodeURIComponent() usage
+- Generating Dynamic URLs
+- Basic UI Layout & Styling
 
-Form Handling
+---
 
-encodeURIComponent()
+## 🚀 How to Run Locally
 
-Generating Dynamic URLs
+1. Clone this repository
+2. Open `index.html` in your browser
+3. Navigate between tools using the navbar
 
-Basic UI structuring
+---
 
-🚀 How to Run
+## 🔮 Future Improvements
 
-Clone the repository
+- Add custom message input in WhatsApp tool
+- Add Copy to Clipboard button
+- Improve UI design
+- Deploy on Netlify or Vercel
 
-Open index.html in your browser
+---
 
-Use any tool from the navigation menu
+## 👨‍💻 Author
 
-🌟 Future Improvements
-
-Add custom message input for WhatsApp
-
-Add copy-to-clipboard button
-
-Improve UI styling
-
-Deploy on Netlify / Vercel
-
-📚 Inspiration
-
-Built while practicing web development concepts and improving JavaScript fundamentals.
+Made with ❤️ while practicing JavaScript fundamentals.
