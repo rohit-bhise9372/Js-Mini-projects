@@ -8,7 +8,6 @@ A collection of my web development projects built using HTML, CSS, and JavaScrip
 JS-Mini-Projects/
 ├── Fitness Tracker/
 │   ├── index.html
-│   ├── bmi-calculator.html
 │   ├── calorie-calculator.html
 │   ├── water-watcher.html
 │   ├── step-sankhya.html
@@ -16,10 +15,9 @@ JS-Mini-Projects/
 │   └── README.md
 ├── Friendly Finance/
 │   ├── index.html
-│   ├── bill-batwara.html
-│   ├── currency-converter.html
-│   ├── discount-deducer.html
-│   ├── paise-planner.html
+│   ├── bill-splitter.html
+│   ├── converter.html
+│   ├── discount-cal.html
 │   ├── styles.css
 │   └── README.md
 ├── Smart Marketer/
