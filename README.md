@@ -11,7 +11,7 @@ JS-Mini-Projects/
 │   ├── bmi-calculator.html
 │   ├── calorie-calculator.html
 │   ├── water-watcher.html
-│   ├── step-goal-planner.html
+│   ├── step-sankhya.html
 │   ├── styles.css
 │   └── README.md
 ├── Friendly Finance/
