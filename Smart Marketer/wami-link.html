@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="get your whatsapp link from just your phone number"
+    />
+    <title>Whatsapp Link Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">SmartMarketer Tools</a></li>
+        </ul>
+        <ul>
+          <li><a href="wami-link.html">WAMI Link</a></li>
+          <li><a href="tweet-link.html">Tweet Link Generator</a></li>
+          <li><a href="github-link.html">GitHub Link Generator</a></li>
+        </ul>
+      </nav>
+      <hr />
+      <hgroup>
+        <h1>WAMI Link Generator</h1>
+        <p>
+          Create your custom WhatsApp message and send it to yout target
+          audience.
+        </p>
+      </hgroup>
+    </header>
+    <main class="container">
+      <fieldset>
+        <input
+          type="text"
+          id="numberInput"
+          placeholder="Enter your whatsapp number"
+          required
+        />
+        <select id="messageInput">
+          <option value="" id="option0">-- Choose a message --</option>
+          <option id="option1">Hi! I'm interested in your product.</option>
+          <option id="option2">
+            Hello, can we connect regarding a service.
+          </option>
+          <option id="option3">Please share more details.</option>
+        </select>
+        <input type="submit" id="generateBtn" value="Generate WAMI Link" />
+      </fieldset>
+      <div id="result"></div>
+    </main>
+    <footer class="container neog-footer">
+      <small>
+        go from zero to hero at full stack development with
+        <a href="https://neog.camp">neog.camp</a>
+      </small>
+    </footer>
+
+    <script>
+      function generateWamiLink() {
+        const inputElement = document.getElementById("numberInput");
+        const messageInputElement = document.getElementById("messageInput");
+        const resultElement = document.getElementById("result");
+
+        const numberInput = inputElement.value;
+        const messageInput = messageInputElement.value;
+
+        const encodedNumber = encodeURIComponent(numberInput);
+        const encodedMessage = encodeURIComponent(messageInput);
+
+        const link =
+          "https://wa.me/+91" + encodedNumber + "?text=" + encodedMessage;
+
+        resultElement.innerText = link;
+      }
+
+      const buttonElement = document.getElementById("generateBtn");
+      buttonElement.addEventListener("click", generateWamiLink);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="get your whatsapp link from just your phone number"
+    />
+    <title>Github URL Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">SmartMarketer Tools</a></li>
+        </ul>
+        <ul>
+          <li><a href="wami-link.html">WAMI Link</a></li>
+          <li><a href="tweet-link.html">Tweet Link Generator</a></li>
+          <li><a href="github-link.html">GitHub Link Generator</a></li>
+        </ul>
+      </nav>
+      <hr />
+      <hgroup>
+        <h1>Github URL Generator</h1>
+        <p>Get your GitHub link URL from just your username.</p>
+      </hgroup>
+    </header>
+    <main class="container">
+      <fieldset>
+        <input
+          type="text"
+          id="githubInput"
+          placeholder="Enter github username"
+        />
+
+        <input type="submit" id="generateBtn" value="Generate URL" />
+      </fieldset>
+      <div>
+        <p id="result"></p>
+      </div>
+    </main>
+    <footer class="container neog-footer">
+      <small>
+        go from zero to hero at full stack development with
+        <a href="https://neog.camp">neog.camp</a>
+      </small>
+    </footer>
+
+    <script>
+      function generateGithubLink() {
+        const githubInputElement = document.getElementById("githubInput");
+        const resultElement = document.getElementById("result");
+
+        const githubInput = githubInputElement.value;
+        const result = resultElement.value;
+
+        const link = githubInput;
+        resultElement.innerText = "https://github.com/" + link;
+        return;
+      }
+
+      const buttonElement = document.getElementById("generateBtn");
+      buttonElement.addEventListener("click", generateGithubLink);
+    </script>
+  </body>
+</html>
