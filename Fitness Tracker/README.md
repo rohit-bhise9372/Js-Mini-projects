@@ -95,9 +95,13 @@ This tool demonstrates:
 Fitness-Tracker/
 │
 ├── index.html
+├── index.js
 ├── cal-calculator.html
+├── cal-calculator.js
 ├── water-watcher.html
+├── water-watcher.js
 ├── step-sankhya.html
+├── step-sankhya.js
 ├── styles.css
 ```
 
