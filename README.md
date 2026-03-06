@@ -8,9 +8,13 @@ A collection of my web development projects built using HTML, CSS, and JavaScrip
 JS-Mini-Projects/
 ├── Fitness Tracker/
 │   ├── index.html
-│   ├── calorie-calculator.html
-│   ├── water-watcher.html
+│   ├── index.js
+│   ├── calorie-cal.html
+│   ├── calorie-cal.js
+│   ├── water-watch.html
+│   ├── water-watch.js
 │   ├── step-sankhya.html
+│   ├── step-sankhya.js
 │   ├── styles.css
 │   └── README.md
 ├── Friendly Finance/
