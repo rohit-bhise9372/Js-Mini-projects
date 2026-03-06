@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src = "github-link.js"></script>
   </head>
   <body>
     <header class="container">
@@ -54,21 +55,6 @@
       </small>
     </footer>
 
-    <script>
-      function generateGithubLink() {
-        const githubInputElement = document.getElementById("githubInput");
-        const resultElement = document.getElementById("result");
-
-        const githubInput = githubInputElement.value;
-        const result = resultElement.value;
-
-        const link = githubInput;
-        resultElement.innerText = "https://github.com/" + link;
-        return;
-      }
-
-      const buttonElement = document.getElementById("generateBtn");
-      buttonElement.addEventListener("click", generateGithubLink);
-    </script>
   </body>
 </html>
+
