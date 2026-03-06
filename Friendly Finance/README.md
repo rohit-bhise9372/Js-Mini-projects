@@ -62,10 +62,15 @@ Helps in personal financial planning.
 Friendly-Finance/
 │
 ├── index.html
-├── bill-batwara.html
-├── currency-converter.html
-├── discount-deducer.html
+├── index.js
+├── bill-splitter.html
+├── bill-splitter.js
+├── converter.html
+├── converter.js
+├── discount-cal.html
+├── discount-cal.js
 ├── styles.css
+├── README.md
 ```
 
 ---
