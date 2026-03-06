@@ -96,10 +96,10 @@ Fitness-Tracker/
 │
 ├── index.html
 ├── index.js
-├── cal-calculator.html
-├── cal-calculator.js
-├── water-watcher.html
-├── water-watcher.js
+├── calorie-cal.html
+├── calorie-cal.js
+├── water-watch.html
+├── water-watch.js
 ├── step-sankhya.html
 ├── step-sankhya.js
 ├── styles.css
