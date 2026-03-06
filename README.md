@@ -31,8 +31,11 @@ JS-Mini-Projects/
 ├── Smart Marketer/
 │   ├── index.html
 │   ├── wami-link.html
+│   ├── wami-link.js
 │   ├── tweet-link.html
+│   ├── tweet-link.js
 │   ├── github-link.html
+│   ├── github-link.js
 │   ├── styles.css
 │   └── README.md
 └── Tripwise Tools/
