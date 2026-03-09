@@ -14,6 +14,8 @@
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src = "avg-cal.js"></script>
+    
   </head>
   <body>
     <header class="container">
@@ -52,23 +54,7 @@
       </small>
     </footer>
 
-    <script>
-      function calculateSpeed() {
-        const distanceInputElement = document.getElementById("distanceInput");
-        const timeInputElement = document.getElementById("timeInput");
-        const resultElement = document.getElementById("result");
-
-        const distanceInput = distanceInputElement.value;
-        const timeInput = timeInputElement.value;
-
-        const speed = distanceInput / timeInput;
-        const finalSpeed = speed.toFixed(2);
-
-        resultElement.innerText = "Average Speed: " + finalSpeed + " km/h ";
-      }
-
-      const calculateBtnElement = document.getElementById("calculateBtn");
-      calculateBtnElement.addEventListener("click", calculateSpeed);
-    </script>
+   
   </body>
 </html>
+
