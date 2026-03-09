@@ -39,10 +39,14 @@ JS-Mini-Projects/
 │   ├── styles.css
 │   └── README.md
 └── Tripwise Tools/
-│   ├── avgerage-calculator.html
+│   ├── avgerage-cal.html
+│   ├── avgerage-cal.js
 │   ├── eta-cal.html
+│   ├── eta-cal.js
 │   ├── fuel-cal.html
-│   ├── itinerary.html
+│   ├── fuel-cal.js
+│   ├── itinerary-cal.html
+│   ├── itinerary-cal.js
 │   ├── index.html
 │   ├── styles.css
 │   └── README.md
