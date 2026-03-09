@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src = "eta.js"> </script>
   </head>
   <body>
     <header class="container">
@@ -52,24 +53,6 @@
       </small>
     </footer>
 
-    <script>
-      function calculateSpeed() {
-        const distanceInputElement = document.getElementById("distanceInput");
-        const speedInputElement = document.getElementById("speedInput");
-        const resultElement = document.getElementById("result");
-
-        const distanceInput = distanceInputElement.value;
-        const speedInput = speedInputElement.value;
-
-        const eta = distanceInput / speedInput;
-        const finalEta = eta.toFixed(2);
-
-        resultElement.innerText =
-          "Estimated Time of Arrival: " + finalEta + " hours ";
-      }
-
-      const calculateBtnElement = document.getElementById("calculateBtn");
-      calculateBtnElement.addEventListener("click", calculateSpeed);
-    </script>
   </body>
 </html>
+
